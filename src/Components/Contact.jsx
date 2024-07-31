@@ -6,6 +6,11 @@ import download from './Assets/Download.png'
 
 
 function Contact () {
+
+    const goToYoutube = () => {
+       window.location.href = "https://youtube.com/@josealfonso-wn5mx?si=nCAttZvT-3KyXXN1"
+    }
+
     return(
         <div id="footer_section" className="bg-[#121212] h-[40vh] w-full flex flex-col justify-center items-center">
             <h1 className="font-sans font-semibold text-[20px] text-[#898989]">Let's Build something  <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Amazing</span>{'\u{1F680}'} Together</h1>
@@ -25,11 +30,7 @@ function Contact () {
                 <h3 id="Contacts" className="font-sans font-semibold text-[20px] text-[#898989] m-[10px]">Watcth this</h3>
                 <div id="whatsapp_container" className="flex flex-row justify-center items-center w-fit m-[10px]">
                     <img src={youtube} alt="whatsapp" className="h-[30px] w-[30px]" />
-                    <p id="number" className="font-sans text-[15px] text-[#898989]">Check my Youtube</p>
-                </div>
-                <div id="gmail_container" className="flex flex-row justify-center items-center w-fit m-[10px]">
-                    <img src={download} alt="whatsapp" className="h-[30px] w-[30px]" />
-                    <p id="number" className="font-sans text-[15px] text-[#898989]">Download my CV</p>
+                    <p id="number" className="font-sans text-[15px] text-[#898989] cursor-pointer" onClick={goToYoutube}>Check my Youtube</p>
                 </div>
             </div>
             </div>
