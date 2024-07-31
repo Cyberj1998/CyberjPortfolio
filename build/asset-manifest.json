@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ada5c997.css",
+    "main.js": "/static/js/main.12b4b9c1.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Vite.png": "/static/media/Vite.cf2bd784aefc4de003c6.png",
+    "static/media/React.png": "/static/media/React.2f2532db663fd5ec5f95.png",
+    "static/media/Node.png": "/static/media/Node.290f630040630c5948b6.png",
+    "static/media/Tailwindcss.png": "/static/media/Tailwindcss.3549d9e451d7abb96934.png",
+    "static/media/ThreeJS.png": "/static/media/ThreeJS.7c862b1bad8407d307b0.png",
+    "static/media/ProfilePic.jpg": "/static/media/ProfilePic.390d599a7624f30214b1.jpg",
+    "static/media/Redux.png": "/static/media/Redux.5de70b7bc0d2556a0958.png",
+    "static/media/Next.png": "/static/media/Next.ab8293c95faf26dc5e3e.png",
+    "static/media/Gmail.png": "/static/media/Gmail.248fdeff31771e6d41f0.png",
+    "static/media/What.png": "/static/media/What.288c668ccb8033e17ce1.png",
+    "static/media/github.svg": "/static/media/github.901a4ad7bf47a7b52626960e9351381a.svg",
+    "static/media/Youtube2.svg": "/static/media/Youtube2.9a7ebc9f254b9fe91cc2e28ff670d59e.svg",
+    "index.html": "/index.html",
+    "static/media/motion.svg": "/static/media/motion.dc867b9f86a828de2cc3fe71f431e7aa.svg",
+    "main.ada5c997.css.map": "/static/css/main.ada5c997.css.map",
+    "main.12b4b9c1.js.map": "/static/js/main.12b4b9c1.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ada5c997.css",
+    "static/js/main.12b4b9c1.js"
+  ]
+}

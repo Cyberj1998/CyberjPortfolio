@@ -1,0 +1,19 @@
+
+    [
+      {
+        "name": "Headphones Page",
+        "description": "Landing page of a headphones company with interactive hero section, specs section, a functional panel to buy the model you want, add to the cart functionality, customers reviews and contact footer",
+        "technologies": "React - AnimeJS - Tailwindcss"
+      },
+      {
+        "name": "Crimson Harmony Scarlet",
+        "description": "Stand out in style with the Crimson Harmony Scarlet On-Ear Headphones. Experience rich and dynamic sound that complements your bold personality.",
+        "price": "79.99$"
+      },
+      {
+        "name": "BlueWave Sky Blue",
+        "description": "Indulge in superior sound quality with the BlueWave Sky Blue Wireless Headphones. Stay trendy with powerful sound in a sleek sky blue finish.",
+        "price": "65.98$"
+      }
+    ]
+
