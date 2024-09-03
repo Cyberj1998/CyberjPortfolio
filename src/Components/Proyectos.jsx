@@ -46,6 +46,14 @@ function Proyectos () {
     const ChairsRepo = () => {
         window.location.href = "https://github.com/Cyberj1998/GamingChairsLandingPage"
     }
+    
+    const tShirtProject = () => {
+        window.location.href = "https://t-shirt-customizer-e4c4.onrender.com"
+    }
+
+    const tShirtRepo = () => {
+        window.location.href = "https://github.com/Cyberj1998/T-Shirt-Customizer"
+    }
 
     return(
         <div className="h-fit bg-[#212121] p-[10px]">
@@ -114,6 +122,23 @@ function Proyectos () {
                         <div className="flex flex-row">
                             <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={ChairsProject}>Go to Project</button>
                             <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={ChairsRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
+                        </div>
+                    </div>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement>
+                    <div>
+                        <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">T-Shirt Customization</h3>
+                        <p className="text-[#757575]">Modern T-shirt customization page with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">3D interactive model</span> thanks to the power of <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Three.js</span>, and modern style using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion</span>.</p>
+                        <div className="border border-grey-500 h-[50px] flex justify-left items-center rounded-[5px]">
+                            <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={TailwindcssLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={FramerMotionLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={ThreeJS} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
+                        </div>
+                        <div className="flex flex-row">
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={tShirtProject}>Go to Project</button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={tShirtRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
                         </div>
                     </div>
                 </VerticalTimelineElement>
