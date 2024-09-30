@@ -1,7 +1,7 @@
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-//----------------import Tech
+//----------------import Tech---------------------------
 import ReactLogo from './Assets/React.png'
 import TailwindcssLogo from './Assets/Tailwindcss.png'
 import AnimejsLogo from './Assets/Anime.png'
@@ -53,6 +53,13 @@ function Proyectos () {
 
     const tShirtRepo = () => {
         window.location.href = "https://github.com/Cyberj1998/T-Shirt-Customizer"
+    }
+    const BurgersProject = () => {
+        window.location.href = "https://primeburgers.onrender.com/"
+    }
+
+    const BurgersRepo = () => {
+        window.location.href = "https://github.com/Cyberj1998/primeburgers"
     }
 
     return(
@@ -139,6 +146,25 @@ function Proyectos () {
                         <div className="flex flex-row">
                             <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={tShirtProject}>Go to Project</button>
                             <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={tShirtRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
+                        </div>
+                    </div>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement>
+                    <div>
+                        <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">E-Commerce with Redux & Emailjs</h3>
+                        <p className="text-[#757575]">Full E-Commerce website with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">node.js</span> server to store and load the products, add to cart functions with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Redux</span> 3d models with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">ThreeJs</span> and modern animations using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion</span></p>
+                        <div className="border border-grey-500 h-[50px] flex justify-left items-center rounded-[5px]">
+                            <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={TailwindcssLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={FramerMotionLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={ThreeJS} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={NodeLogo} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={ReduxLogo} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
+                        </div>
+                        <div className="flex flex-row">
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={BurgersProject}>Go to Project</button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={BurgersRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
                         </div>
                     </div>
                 </VerticalTimelineElement>
