@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import DeveloperModel from './DeveloperModel'
 import { features } from './constants/constants'
 
-const Developer = ({ loading, setLoading }) => {
+const DeveloperSection = ({ loading, setLoading }) => {
 
   const[animationName,setAnimationName]=useState('idle')
 
@@ -77,5 +77,5 @@ const Developer = ({ loading, setLoading }) => {
 
 
 
-export default Developer
+export default DeveloperSection
 

@@ -30,7 +30,19 @@ const DeveloperModel = ({ animationName = 'idle', loading, setLoading, ...props 
   const { actions } = useAnimations([idleAnimation[0], saluteAnimation[0], victoryAnimation[0], clappingAnimation[0]], group)
 
 
+  const changeState = () => {
+    console.log('Nodes:', nodes);
+    console.log('Materials:', materials);
+    // Comprobamos si nodes y materials están definidos
+    if (nodes && materials) {
+      setLoading(false); // Si están definidos, se considera que el modelo ha terminado de cargarse
+    }
+  }
+
   useEffect(()=>{
+
+    changeState()
+    
     actions[animationName].reset().fadeIn(0.5).play()
 
 
@@ -39,12 +51,6 @@ const DeveloperModel = ({ animationName = 'idle', loading, setLoading, ...props 
 
   },[animationName])
 
-  useEffect(() => {
-    // Comprobamos si nodes y materials están definidos
-    if (nodes && materials) {
-      setLoading(false); // Si están definidos, se considera que el modelo ha terminado de cargarse
-    }
-  }, [nodes, materials]);
 
 
   return (

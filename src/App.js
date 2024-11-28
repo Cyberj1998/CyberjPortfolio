@@ -15,21 +15,21 @@ function App() {
 
   return (
     <div className="App">
-      {
-        loading ? (
-          <Loader />
-        )
-        :
-        (
           <>
-          <Hero />
-          <Proyectos />
-          <DeveloperSection loading={loading} setLoading={setLoading} />
-          <Email />
-          <Contact />
+            {
+              loading ? (
+                <Loader />
+              )
+              : (
+                ''
+              )
+            }
+            <Hero />
+            <Proyectos />
+            <DeveloperSection loading={loading} setLoading={setLoading} />
+            <Email />
+            <Contact />
           </>
-        )
-      }
     </div>
   );
 }
