@@ -2,7 +2,6 @@ import React from "react";
 import what from './Assets/What.png'
 import gmail from './Assets/Gmail.png'
 import youtube from './Assets/Youtube2.svg'
-import download from './Assets/Download.png'
 
 
 function Contact () {
