@@ -23,7 +23,7 @@ const LoadingScreen = ({ started, onStarted }) => {
               Loading...
             </h1>
             <button 
-              className="loadingScreen_button"
+              className="loadingScreen_button text-black bg-red-500"
               disabled={progress < 100}
               onClick={onStarted}
             >
