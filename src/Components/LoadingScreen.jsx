@@ -7,7 +7,7 @@ const LoadingScreen = ({ started, onStarted }) => {
 
 
     return (
-        started ? (
+        !started ? (
             <div className="loading-screen">
           <div className="loadingScreen_progress">
             <div 
