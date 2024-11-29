@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import DeveloperModel from './DeveloperModel'
+import LoadingScreen from './LoadingScreen'
 import { features } from './constants/constants'
 
 const DeveloperSection = ({ loading, setLoading }) => {
+
+  const[start,setStart]=useState(false)
 
   const[animationName,setAnimationName]=useState('idle')
 
@@ -44,6 +47,7 @@ const DeveloperSection = ({ loading, setLoading }) => {
             />
           </Suspense>
         </Canvas>
+        <LoadingScreen started={start} onStarted={()=>setStart(true)} />
       </div>
 
       <div className='left-section h-full max-sm:h-[50%] w-[50%] max-sm:w-full flex flex-col justify-evenly items-center'>
