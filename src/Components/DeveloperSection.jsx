@@ -2,12 +2,11 @@ import React, { useState } from 'react'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import DeveloperModel from './DeveloperModel'
-import LoadingScreen from './LoadingScreen'
+import CustomLoader from './CustomLoader'
 import { features } from './constants/constants'
 
 const DeveloperSection = ({ loading, setLoading }) => {
 
-  const[start,setStart]=useState(false)
 
   const[animationName,setAnimationName]=useState('idle')
 
@@ -36,7 +35,7 @@ const DeveloperSection = ({ loading, setLoading }) => {
           <ambientLight intensity={7} />
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
           <directionalLight position={[10, 10, 10]} intensity={1} />
-          <Suspense>
+          <Suspense fallback={<CustomLoader />}>
             <DeveloperModel
               loading={loading}
               setLoading={setLoading}
@@ -47,7 +46,6 @@ const DeveloperSection = ({ loading, setLoading }) => {
             />
           </Suspense>
         </Canvas>
-        <LoadingScreen started={start} onStarted={()=>setStart(true)} />
       </div>
 
       <div className='left-section h-full max-sm:h-[50%] w-[50%] max-sm:w-full flex flex-col justify-evenly items-center'>
