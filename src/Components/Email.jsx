@@ -52,8 +52,8 @@ const Email = () => {
   }
 
   return (
-    <div className='h-[90vh] w-full flex justify-center items-center bg-[#212121]'>
-      <div className='relative h-[80%] w-[80%] flex items-center border rounded-[10px] p-10 max-sm:p-5 justify-center flex-col'>
+    <div id='email' className='h-[90vh] w-full flex justify-center items-center bg-[#212121]'>
+      <div className='relative h-[80%] max-sm:h-fit w-[80%] flex items-center border rounded-[10px] p-10 max-sm:p-5 justify-center flex-col'>
         <img src="" alt="" className='absolute inset-0 min-h-screen' />
 
         <div className='contact-container z-50'>

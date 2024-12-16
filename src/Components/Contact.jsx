@@ -11,7 +11,7 @@ function Contact () {
     }
 
     return(
-        <div id="footer_section" className="bg-[#121212] h-[40vh] w-full flex flex-col justify-center items-center">
+        <div id="footer" className="bg-[#121212] h-[40vh] w-full flex flex-col justify-center items-center">
             <h1 className="font-sans font-semibold text-[20px] text-[#898989]">Let's Build something  <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Amazing</span>{'\u{1F680}'} Together</h1>
             <div className="flex flex-row h-full w-full">
             <div id="left_side" className="h-full w-[50%] flex justify-center items-left flex-col">

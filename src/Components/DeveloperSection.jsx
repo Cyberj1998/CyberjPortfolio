@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import DeveloperModel from './DeveloperModel'
+import DeveloperNewModel from './DeveloperNewModel'
 import CustomLoader from './CustomLoader'
 import { features } from './constants/constants'
 
@@ -28,8 +29,8 @@ const DeveloperSection = ({ loading, setLoading }) => {
   const [ModelScale, ModelPosition, Modelrotation] = adjustScreen()
 
   return (
-    <div className='h-[90vh] w-full bg-[#212121] flex flex-row max-sm:flex-col justify-center items-center'>
-      <div className='left-section h-full max-sm:h-[50%] w-[50%] max-sm:w-full flex justify-center items-center'>
+    <div id='features' className='h-[90vh] w-full bg-[#212121] flex flex-row max-sm:flex-col justify-center items-center'>
+      <div className='left-section max-sm:hidden h-full max-sm:h-[50%] w-[50%] max-sm:w-full flex justify-center items-center'>
         <Canvas 
           camera={{ near: 1, far: 500 }}>
           <ambientLight intensity={7} />
@@ -48,7 +49,7 @@ const DeveloperSection = ({ loading, setLoading }) => {
         </Canvas>
       </div>
 
-      <div className='left-section h-full max-sm:h-[50%] w-[50%] max-sm:w-full flex flex-col justify-evenly items-center'>
+      <div className='right-section h-full max-sm:h-[50%] w-[50%] max-sm:w-full flex flex-col justify-evenly items-center'>
         {
           features.map(({ id, title, text, icon, animation })=>(
             <div 

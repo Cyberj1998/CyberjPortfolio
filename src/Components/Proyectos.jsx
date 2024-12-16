@@ -12,6 +12,8 @@ import NodeLogo from './Assets/Node.png'
 import NextLogo from './Assets/Next.png'
 import FramerMotionLogo from './Assets/motion.svg'
 import ReduxLogo from './Assets/Redux.png'
+import ZustandLogo from './Assets/zustand.png'
+import GsapLogo from './Assets/gsap.png'
 
 function Proyectos () {
 
@@ -69,8 +71,16 @@ function Proyectos () {
         window.location.href = "https://github.com/Cyberj1998/e-scooter"
     }
 
+    const GamingProject = () => {
+        window.location.href = "https://gaming-website-ih46.onrender.com/"
+    }
+
+    const GamingRepo = () => {
+        window.location.href = "https://github.com/Cyberj1998/gaming_website"
+    }
+
     return(
-        <div className="h-fit bg-[#212121] p-[10px]">
+        <div id="projects" className="h-fit bg-[#212121] p-[10px]">
             <VerticalTimeline>
                 <VerticalTimelineElement>
                     <div>
@@ -177,9 +187,9 @@ function Proyectos () {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement>
                     <div>
-                        <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Slick Design Landing Page</h3>
+                        <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Sleek Design Landing Page</h3>
                         <p className="text-[#757575]">
-                        Slick and modern design of a landing page dedicated to <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">E-scooters</span>, modern responsive design using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Three.js</span> to add 3D models to our website. Finally, some smooth animations using the power of <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion</span> to catch the eye of the user even more.</p>
+                        Sleek and modern design of a landing page dedicated to <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">E-scooters</span>, modern responsive design using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Three.js</span> to add 3D models to our website. Finally, some smooth animations using the power of <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion</span> to catch the eye of the user even more.</p>
                         <div className="border border-grey-500 h-fit flex flex-wrap justify-left items-center rounded-[5px]">
                             <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
                             <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
@@ -195,6 +205,24 @@ function Proyectos () {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement>
                     <div>
+                        <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">A Modern Gaming Experience</h3>
+                        <p className="text-[#757575]">
+                          This modern website features a sleek, futuristic design that transforms the gaming experience. With captivating videos that draw users in and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">GSAP</span> animations that flow smoothly, every interaction feels seamless. Built with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span>, the site ensures a responsive and aesthetically pleasing layout
+                        </p>
+                        <div className="border border-grey-500 h-fit flex flex-wrap justify-left items-center rounded-[5px]">
+                            <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={TailwindcssLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={GsapLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                        </div>
+                        <div className="flex flex-row">
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={GamingProject}>Go to Project</button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={GamingRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
+                        </div>
+                    </div>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement>
+                    <div>
                         <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Be Patient</h3>
                         <p className="text-[#757575]">More <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Awesome</span> Projects Coming <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Soon</span>....</p>
                     </div>
@@ -203,8 +231,6 @@ function Proyectos () {
         </div>
     )
 }
-
-
 
 
 
