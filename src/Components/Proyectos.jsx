@@ -79,6 +79,14 @@ function Proyectos () {
         window.location.href = "https://github.com/Cyberj1998/gaming_website"
     }
 
+    const FizziProject = () => {
+        window.location.href = "https://fizzi.onrender.com"
+    }
+
+    const FizziRepo = () => {
+        window.location.href = "https://github.com/Cyberj1998/fizzi"
+    }
+
     return(
         <div id="projects" className="h-fit bg-[#212121] p-[10px]">
             <VerticalTimeline>
@@ -157,12 +165,12 @@ function Proyectos () {
                             <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
                             <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
                             <img src={TailwindcssLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
-                            <img src={FramerMotionLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
                             <img src={ThreeJS} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={FramerMotionLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
                         </div>
                         <div className="flex flex-row">
-                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={tShirtProject}>Go to Project</button>
-                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={tShirtRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={FizziProject}>Go to Project</button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={FizziRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
                         </div>
                     </div>
                 </VerticalTimelineElement>
@@ -208,6 +216,24 @@ function Proyectos () {
                         <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">A Modern Gaming Experience</h3>
                         <p className="text-[#757575]">
                           This modern website features a sleek, futuristic design that transforms the gaming experience. With captivating videos that draw users in and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">GSAP</span> animations that flow smoothly, every interaction feels seamless. Built with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span>, the site ensures a responsive and aesthetically pleasing layout
+                        </p>
+                        <div className="border border-grey-500 h-fit flex flex-wrap justify-left items-center rounded-[5px]">
+                            <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
+                            <img src={TailwindcssLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={GsapLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
+                        </div>
+                        <div className="flex flex-row">
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={GamingProject}>Go to Project</button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={GamingRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
+                        </div>
+                    </div>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement>
+                    <div>
+                        <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Eye Catching Landing Page</h3>
+                        <p className="text-[#757575]">
+                        Fizzi is a landing page for a fictional soda brand that is anything but ordinary. It features an eye-catching design that uses the power of <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Three.js</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">GSAP</span> combined to create amazing animations with 3D models to catch the user's attention. It also utilizes <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span> for further styling
                         </p>
                         <div className="border border-grey-500 h-fit flex flex-wrap justify-left items-center rounded-[5px]">
                             <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
