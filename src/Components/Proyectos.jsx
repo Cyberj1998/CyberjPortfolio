@@ -242,8 +242,8 @@ function Proyectos () {
                             <img src={GsapLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
                         </div>
                         <div className="flex flex-row">
-                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={GamingProject}>Go to Project</button>
-                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={GamingRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={FizziProject}>Go to Project</button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={FizziRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
                         </div>
                     </div>
                 </VerticalTimelineElement>
