@@ -19,7 +19,7 @@ const BentoGrid = () => {
             <div>
               <p className="grid-headtext">Hi, I'm Jay</p>
               <p className="grid-subtext">
-                With a strong passion for coding im here to create amazing/modern looking websites to break into the tech industry 
+              With a strong passion for coding, I'm here to create amazing, modern-looking websites to break into the tech industry. 
               </p>
             </div>
           </div>
@@ -32,7 +32,7 @@ const BentoGrid = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in React enviroments with a wide use of popular libraries as three.js framer motion or gsap to achive amazing and eye catching looking websites
+              I specialize in React environments with a wide use of popular libraries such as Three.js, Framer Motion, and GSAP to achieve amazing and eye-catching websites.
               </p>
             </div>
           </div>
@@ -54,8 +54,8 @@ const BentoGrid = () => {
               />
             </div>
             <div>
-              <p className="grid-headtext">I'm very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">bilingual avilities to comunicate with people all around the globe</p>
+              <p className="grid-headtext">I'm very flexible with time zone communications and locations.</p>
+              <p className="grid-subtext">Strong bilingual abilities allow me to communicate with people all around the globe.</p>
             </div>
           </div>
         </div>
@@ -67,8 +67,7 @@ const BentoGrid = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programmin is my
-                passion. I enjoy exploring new technologies, and enhancing my skills.
+                I love solving problems and building things through code. Programming is my passion. I enjoy exploring new technologies and enhancing my skills.
               </p>
             </div>
           </div>
