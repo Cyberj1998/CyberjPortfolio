@@ -13,12 +13,13 @@ import NextLogo from './Assets/Next.png'
 import FramerMotionLogo from './Assets/motion.svg'
 import ReduxLogo from './Assets/Redux.png'
 import ZustandLogo from './Assets/zustand.png'
+import SupabaseLogo from './Assets/supabase.svg'
 import GsapLogo from './Assets/gsap.png'
 
 function Proyectos () {
 
     const headPhonesProject = () => {
-        window.location.href = "https://headphones-2e81.onrender.com"
+        window.location.href = "https://headphones-ecommerce.onrender.com/"
     }
 
     const headPhonesRepo = () => {
@@ -93,13 +94,14 @@ function Proyectos () {
                 <VerticalTimelineElement>
                     <div>
                         <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Headphones Page</h3>
-                        <p className="text-[#757575]">modern landing page for a headphones company featuring sleek design elements and smooth animations using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span>, <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Anime.js</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion</span>. 'add to cart' functionality using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Redux</span> to handle complex states.</p>
+                        <p className="text-[#757575]">modern landing page for a headphones company featuring sleek design elements and smooth animations using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span>, <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Anime.js</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion</span>. 'add to cart' functionality using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Redux</span> to handle complex states and <span>Supabase</span> for the management of the database</p>
                         <div className="border border-grey-500 h-fit flex flex-wrap justify-left items-center rounded-[5px]">
                             <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
                             <img src={TailwindcssLogo} className="w-[40px] h-[30px] m-[5px]" alt="react" />
                             <img src={AnimejsLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
                             <img src={FramerMotionLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
                             <img src={ReduxLogo} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={SupabaseLogo} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
                         </div>
                         <div className="flex flex-row">
                             <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={headPhonesProject}>Go to Project</button>
@@ -169,15 +171,15 @@ function Proyectos () {
                             <img src={FramerMotionLogo} className="w-[40px] h-[30px] rounded-[5px] m-[5px]" alt="react" />
                         </div>
                         <div className="flex flex-row">
-                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={FizziProject}>Go to Project</button>
-                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={FizziRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={tShirtProject}>Go to Project</button>
+                            <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1] ml-5 flex" onClick={tShirtRepo}>See Source Code <img src={GithubLogo} className="h-[20px]" alt="logo" /></button>
                         </div>
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement>
                     <div>
                         <h3 className="font-sans font-semibold text-[20px] bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">E-Commerce with Redux & Emailjs</h3>
-                        <p className="text-[#757575]">Full E-Commerce website with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">node.js</span> server to store and load the products, add to cart functions with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Redux</span> 3d models with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">ThreeJs</span> and modern animations using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion</span></p>
+                        <p className="text-[#757575]">Full E-Commerce website with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">node.js</span> server to store and load the products, add to cart functions with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Redux</span> 3d models with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">ThreeJs</span> and modern animations using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Framer Motion.</span> Plus <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Supabase</span> for the control and management of the database</p>
                         <div className="border border-grey-500 h-fit flex flex-wrap justify-left items-center rounded-[5px]">
                             <img src={ViteLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
                             <img src={ReactLogo} className="w-[40px] h-[40px] m-[5px]" alt="react" />
@@ -186,6 +188,7 @@ function Proyectos () {
                             <img src={ThreeJS} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
                             <img src={NodeLogo} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
                             <img src={ReduxLogo} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
+                            <img src={SupabaseLogo} className="w-[40px] h-[40px] rounded-[5px] m-[5px]" alt="react" />
                         </div> 
                         <div className="flex flex-row">
                             <button className="bg-[#e8e8e8] p-[5px] rounded-[5px] mt-[5px] font-sans font-semibold cursor-pointer hover:bg-[#c1c1c1]" onClick={BurgersProject}>Go to Project</button>
