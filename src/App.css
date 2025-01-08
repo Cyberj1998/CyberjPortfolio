@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+
+    .c-space {
+      @apply sm:px-10 px-5;
+    }
+    
+    .grid-container {
+      @apply w-full h-full border border-[#3d3d3d] bg-[#1b1b1b] rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    }
+  
+    .grid-headtext {
+      @apply text-xl font-semibold mb-2 text-white font-sans;
+    }
+  
+    .grid-subtext {
+      @apply text-[#afb0b6] text-base font-sans;
+    }
+  
+    .copy-container {
+      @apply cursor-pointer flex justify-center items-center gap-2;
+    }
+  
+    .c-space {
+      @apply sm:px-10 px-5;
+    }
+  }
+  

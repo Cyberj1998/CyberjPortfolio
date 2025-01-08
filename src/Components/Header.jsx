@@ -57,7 +57,7 @@ const Header = () => {
       <div className='w-[35%] flex flex-row justify-evenly items-center'>
         <NavLink title='email' />
         <div className='h-2 w-2 bg-[#969696] rounded-full max-sm:hidden' />
-        <NavLink title='footer' />
+        <NavLink title='about' />
       </div>
     </header>
     </>
