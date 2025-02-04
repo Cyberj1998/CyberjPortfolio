@@ -76,5 +76,12 @@ export const projects = [
       techStack: [ViteLogo, ReactLogo, TailwindcssLogo, GsapLogo],
       projectUrl: 'https://fizzi.onrender.com',
       repoUrl: 'https://github.com/Cyberj1998/fizzi'
+    },
+    {
+      name: 'Modern Design Next App',
+      description: (<>Very modern design <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Next.js</span> website showcasing an AI company, using the power of <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Next.js</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Tailwind CSS</span> to create a stunning design and</>),
+      techStack: [NextLogo, TailwindcssLogo],
+      projectUrl: 'https://brainwave-538z.onrender.com/',
+      repoUrl: 'https://github.com/Cyberj1998/Brainwave'
     }
 ]
