@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c2cd9c2.css",
-    "main.js": "/static/js/main.c554d7ca.js",
+    "main.css": "/static/css/main.3ce7ece7.css",
+    "main.js": "/static/js/main.9cc6a91d.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/Ready_Player_Model.glb": "/static/media/Ready_Player_Model.e84112c65921a4a65ecc.glb",
     "static/media/Ready_Player_Me_New_Model.glb": "/static/media/Ready_Player_Me_New_Model.9d07201111f038a9127a.glb",
@@ -27,16 +27,16 @@
     "static/media/Gmail.png": "/static/media/Gmail.248fdeff31771e6d41f0.png",
     "static/media/What.png": "/static/media/What.288c668ccb8033e17ce1.png",
     "static/media/github.svg": "/static/media/github.901a4ad7bf47a7b52626960e9351381a.svg",
+    "index.html": "/index.html",
     "static/media/supabase.svg": "/static/media/supabase.c328a6dbe87dc1d380e05fa35eea3f5a.svg",
     "static/media/Youtube2.svg": "/static/media/Youtube2.9a7ebc9f254b9fe91cc2e28ff670d59e.svg",
-    "index.html": "/index.html",
     "static/media/motion.svg": "/static/media/motion.dc867b9f86a828de2cc3fe71f431e7aa.svg",
-    "main.8c2cd9c2.css.map": "/static/css/main.8c2cd9c2.css.map",
-    "main.c554d7ca.js.map": "/static/js/main.c554d7ca.js.map",
+    "main.3ce7ece7.css.map": "/static/css/main.3ce7ece7.css.map",
+    "main.9cc6a91d.js.map": "/static/js/main.9cc6a91d.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c2cd9c2.css",
-    "static/js/main.c554d7ca.js"
+    "static/css/main.3ce7ece7.css",
+    "static/js/main.9cc6a91d.js"
   ]
 }
