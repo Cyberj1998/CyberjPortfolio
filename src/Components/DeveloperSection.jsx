@@ -49,7 +49,7 @@ const DeveloperSection = ({ loading, setLoading }) => {
         </Canvas>
       </div>
 
-      <div className='right-section h-full max-sm:h-[50%] w-[50%] max-sm:w-full flex flex-col justify-evenly items-center'>
+      <div className='right-section h-full max-sm:h-[80%] w-[50%] max-sm:w-full flex flex-col justify-evenly items-center max-sm:justify-around'>
         {
           features.map(({ id, title, text, icon, animation })=>(
             <div 
@@ -61,12 +61,12 @@ const DeveloperSection = ({ loading, setLoading }) => {
             >
               <div className='flex flex-col w-[20%]'>
                 <img src={icon} alt="tech icon" className='h-10 w-10 mt-[5px] ml-[10px]' />
-                <h3 className='text-white mt-[5px] ml-[10px] font-sans font-semibold max-md:text-[12px]'>
+                <h3 className='text-white mt-[5px] ml-[10px] font-heading font-semibold max-md:text-[12px]'>
                   {title}
                 </h3>
               </div>
               <div className='w-[80%] object-contain'>
-                <p className='text-[#a5a5a5] text-[15px] max-sm:text-[12px] max-md:text-[12px] font-sans object-contain font-semibold p-2 max-sm:p-1'>
+                <p className='text-[#a5a5a5] text-[15px] max-sm:text-[12px] max-md:text-[12px] font-body object-contain font-semibold p-2 max-sm:p-1'>
                   {text}
                 </p>
               </div>

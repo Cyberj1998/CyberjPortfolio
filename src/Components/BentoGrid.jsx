@@ -10,85 +10,76 @@ const BentoGrid = () => {
 
   return (
 
-    <section className="c-space my-20" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
-        <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src={GridImage1} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
-
-            <div>
-              <p className="grid-headtext">Hi, I'm Jay</p>
-              <p className="grid-subtext">
-              With a strong passion for coding, I'm here to create amazing, modern-looking websites to break into the tech industry. 
+    <section className="p-[20px] h-[100vh] max-sm:h-fit" id="about">
+      <div className="grid grid-cols-10 grid-rows-5 gap-5 max-sm:flex max-sm:flex-col h-full">
+          
+          <div className="col-span-6 row-span-3 max-sm:h-[350px] max-sm:w-full object-contain border border-[#3d3d3d] bg-[#1b1b1b] rounded-lg flex flex-col">
+            <div className='h-[70%] w-full'>
+              <img 
+                src={GridImage1} 
+                alt="gridImage"
+                className='h-full w-full object-cover' 
+              />
+            </div>
+            <div className='h-[30%] w-full flex flex-col justify-center items-start'>
+              <h3 className='text-white text-base max-md:text-[12px] font-heading font-semibold pl-3'>Hi i'm Jay</h3>
+              <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
+                Let's create something useful and unique together
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src={GridImage2} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
-
-            <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
-              I specialize in React environments with a wide use of popular libraries such as Three.js, Framer Motion, and GSAP to achieve amazing and eye-catching websites.
+          <div className="col-span-4 row-span-5 max-sm:h-[350px] max-sm:w-full border border-[#3d3d3d] bg-[#1b1b1b] rounded-lg">
+            <div className='h-[70%] w-full'>
+              <img 
+                src={GridImage2} 
+                alt="gridImage"
+                className='h-full w-full object-cover' 
+              />
+            </div>
+            <div className='h-[30%] w-full flex flex-col justify-center items-start'>
+              <h3 className='text-white text-base max-md:text-[12px] font-heading font-semibold pl-3'>Tech Stack</h3>
+              <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
+                I work with React, Next, and Tailwind CSS, and I love adding 3D models to websites with Three.js
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="col-span-1 xl:row-span-4">
-          <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
+          <div className="col-span-3 row-span-2 max-sm:h-[350px] max-sm:w-full border border-[#3d3d3d] bg-[#1b1b1b] rounded-lg">
+            <div className='h-[70%] w-full flex justify-center items-cnter'>
+              <Globe 
+                height={150}
+                width={150}
+                backgroundColor='rgba(0, 0, 0, 0)'
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                globeImageUrl='//unpkg.com/three-globe/example/img/earth-night.jpg'
+                bumpImageUrl='//unpkg.com/three-globe/example/img/earth-topology.png'
               />
             </div>
-            <div>
-              <p className="grid-headtext">I'm very flexible with time zone communications and locations.</p>
-              <p className="grid-subtext">Strong bilingual abilities allow me to communicate with people all around the globe.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="xl:col-span-2 xl:row-span-3">
-          <div className="grid-container">
-            <img src={GridImage3} alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
-
-            <div>
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I love solving problems and building things through code. Programming is my passion. I enjoy exploring new technologies and enhancing my skills.
+            <div className='h-[30%] w-full flex flex-col justify-center items-start'>
+              <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
+                Willing to work remotely from anywhere in the world
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container">
-            <img
-              src={GridImage4}
-              alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
-            />
-
-            <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container">
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">cyberjay826@gmail.com</p>
-              </div>
+          <div className="col-span-3 row-span-2 max-sm:h-[350px] max-sm:w-full border border-[#3d3d3d] bg-[#1b1b1b] rounded-lg">
+            <div className='h-[70%] w-full overflow-hidden'>
+              <img 
+                src={GridImage3} 
+                alt="gridImage"
+                className='h-full w-full object-cover' 
+              />
+            </div>
+            <div className='h-[30%] w-full flex flex-col justify-center items-start'>
+              <h3 className='text-white text-base max-md:text-[12px] font-heading font-semibold pl-3'>Conact Me</h3>
+              <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
+                Fill the form below to send an email
+              </p>
             </div>
           </div>
-        </div>
       </div>
     </section>
   )
@@ -99,14 +90,19 @@ export default BentoGrid
 
 
 
-
 /*
 
-custom class
-
-copy-container
-
-grid-container
+<Globe
+  height={326}
+                  width={326}
+                  backgroundColor="rgba(0, 0, 0, 0)"
+                  backgroundImageOpacity={0.5}
+                  showAtmosphere
+                  showGraticules
+                  globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                  bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                  labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                />
 
 
 */
