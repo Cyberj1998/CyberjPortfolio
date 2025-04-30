@@ -83,5 +83,12 @@ export const projects = [
       techStack: [NextLogo, TailwindcssLogo],
       projectUrl: 'https://brainwave-538z.onrender.com/',
       repoUrl: 'https://github.com/Cyberj1998/Brainwave'
+    },
+    {
+      name: 'Ecommerce App for a Coffe Shop',
+      description: (<>Coffe Shop self ordering system with <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Redux</span> using <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">TailwindCss</span> and <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Gsap</span> to archive a modern and eye catching hero section, using the power of <span className="bg-gradient-to-r from-[#3d74ff] to-[#3dd8ff] text-transparent bg-clip-text">Supabase</span> to handle the backend and database management</>),
+      techStack: [ViteLogo, ReactLogo, TailwindcssLogo, GsapLogo, SupabaseLogo, ReduxLogo],
+      projectUrl: 'https://coffeeshop-ik7s.onrender.com/',
+      repoUrl: 'https://github.com/Cyberj1998/CoffeeShop'
     }
 ]
