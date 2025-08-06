@@ -1,4 +1,3 @@
-import React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 //---------------------import Tech-------------------------------
@@ -6,7 +5,7 @@ import { projects } from "./ProjectsInfo";
 import ProjectCard from "./ProjectCard";
 
 
-function Proyectos () {
+function Proyectos ({ lenguage }) {
 
     return(
         <div id="projects" className="h-fit bg-[#212121] p-[10px]">
@@ -15,6 +14,7 @@ function Proyectos () {
                   <VerticalTimelineElement>
                     <ProjectCard
                       key={index} 
+                      lenguage={lenguage}
                       data={project}
                     />
                   </VerticalTimelineElement>
@@ -32,5 +32,5 @@ function Proyectos () {
 
 
 
-
 export default Proyectos
+

@@ -10,15 +10,15 @@
     }
     
     .grid-container {
-      @apply w-full h-full border border-[#3d3d3d] bg-[#1b1b1b] rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+      @apply w-full h-full border border-[#3d3d3d] bg-[#1b1b1b] rounded-lg sm:p-7 p-4 flex flex-col;
     }
   
     .grid-headtext {
-      @apply text-xl font-semibold mb-2 text-white font-sans;
+      @apply text-[20px] font-semibold mb-2 text-white font-sans;
     }
   
     .grid-subtext {
-      @apply text-[#afb0b6] text-base font-sans;
+      @apply text-[#afb0b6] text-[15px] font-sans;
     }
   
     .copy-container {
@@ -30,3 +30,11 @@
     }
   }
   
+  .hero {
+    -webkit-mask-image: linear-gradient(to bottom,
+                #212121 80%,
+                transparent 100%);
+    mask-image: linear-gradient(to bottom,
+                #212121 80%,
+                transparent 100%);
+  }

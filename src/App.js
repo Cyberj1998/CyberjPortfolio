@@ -12,15 +12,16 @@ import BentoGrid from './Components/BentoGrid';
 function App() {
   
   const [loading, setLoading] = useState(true)
+  const[lenguage,setLenguage]=useState('english')
 
   return (
     <div className="App bg-[#212121]">
           <>
-            <Header />
-            <Hero />
-            <Proyectos />
-            <BentoGrid />
-            <DeveloperSection loading={loading} setLoading={setLoading} />
+            <Header setLenguage={setLenguage} lenguage={lenguage} />
+            <Hero lenguage={lenguage} />
+            <Proyectos lenguage={lenguage} />
+            <BentoGrid lenguage={lenguage} />
+            <DeveloperSection lenguage={lenguage} loading={loading} setLoading={setLoading} />
             <Email />
             <Contact />
           </>

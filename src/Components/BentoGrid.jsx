@@ -6,7 +6,7 @@ import GridImage4 from './Assets/grid/grid4.png'
 import Globe from 'react-globe.gl'
 
 
-const BentoGrid = () => {
+const BentoGrid = ({ lenguage }) => {
 
   return (
 
@@ -24,7 +24,7 @@ const BentoGrid = () => {
             <div className='h-[30%] w-full flex flex-col justify-center items-start'>
               <h3 className='text-white text-base max-md:text-[12px] font-heading font-semibold pl-3'>Hi i'm Jay</h3>
               <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
-                Let's create something useful and unique together
+                {lenguage === 'english' ? 'Lets create something useful and unique together' : 'Vamos a crear algo útil y único juntos'}
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ const BentoGrid = () => {
             <div className='h-[30%] w-full flex flex-col justify-center items-start'>
               <h3 className='text-white text-base max-md:text-[12px] font-heading font-semibold pl-3'>Tech Stack</h3>
               <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
-                I work with React, Next, and Tailwind CSS, and I love adding 3D models to websites with Three.js
+                {lenguage === 'english' ? 'I work with React, Next, and Tailwind CSS, and I love adding 3D models to websites with Three.js' : 'Trabajo con React, Next y Tailwind CSS, y me encanta agregar modelos 3D a sitios web con Three.js'}
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ const BentoGrid = () => {
             </div>
             <div className='h-[30%] w-full flex flex-col justify-center items-start'>
               <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
-                Willing to work remotely from anywhere in the world
+                {lenguage === 'english' ? 'Willing to work remotely from anywhere in the world' : 'Dispuesto a trabajar de forma remota desde cualquier parte del mundo'}
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@ const BentoGrid = () => {
             <div className='h-[30%] w-full flex flex-col justify-center items-start'>
               <h3 className='text-white text-base max-md:text-[12px] font-heading font-semibold pl-3'>Conact Me</h3>
               <p className='text-white font-body text-sm max-md:text-[10px] p-3'>
-                Fill the form below to send an email
+                {lenguage === 'english' ? 'Fill the form below to send an email' : 'Completa el formulario a continuación para enviar un correo electrónico'}
               </p>
             </div>
           </div>

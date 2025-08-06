@@ -5,10 +5,20 @@ import { useState, useEffect } from 'react'
 import clsx from 'clsx'
 
 
-const Header = () => {
+const Header = ({setLenguage, lenguage}) => {
 
   const[hasScroll,setHasScroll]=useState(false)
   const[isOpen,setIsOpen]=useState(false)
+  const[spanish,setSpanish]=useState(false)
+
+  const handleLenguage = () => {
+    setSpanish(prev => !prev)
+    if(lenguage === 'english'){
+      setLenguage('spanish')
+    } else{
+      setLenguage('english')
+    }
+  }
 
 
   const NavLink = ({ title }) => (
@@ -58,6 +68,23 @@ const Header = () => {
         <NavLink title='email' />
         <div className='h-2 w-2 bg-[#969696] rounded-full max-sm:hidden' />
         <NavLink title='about' />
+      </div>
+
+      <div className={`absolute top-0 right-0 flex flex-row items-center ${hasScroll ? 'mt-[5px]' : 'mt-[20px] '}`}>
+        <p className='base-bold text-[#969696] uppercase mr-[5px]'>
+          {
+            spanish ? 'ES'
+            : 'EN'
+          }
+        </p>
+        <div 
+          onClick={()=>handleLenguage()}
+          className={`bg-[#515151] h-[20px] w-[50px] rounded-[10px] cursor-pointer`}
+        >
+          <div className={`h-[19px] w-[19px] bg-[#969696] rounded-full relative transition-all duration-500 ${spanish ? 'ml-[30px]' : ''} `}>
+
+          </div>
+        </div>
       </div>
     </header>
     </>

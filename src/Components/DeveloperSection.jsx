@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import DeveloperModel from './DeveloperModel'
-import DeveloperNewModel from './DeveloperNewModel'
 import CustomLoader from './CustomLoader'
 import { features } from './constants/constants'
 
-const DeveloperSection = ({ loading, setLoading }) => {
+const DeveloperSection = ({ loading, setLoading, lenguage }) => {
 
 
   const[animationName,setAnimationName]=useState('idle')
@@ -51,7 +50,7 @@ const DeveloperSection = ({ loading, setLoading }) => {
 
       <div className='right-section h-full max-sm:h-[80%] w-[50%] max-sm:w-full flex flex-col justify-evenly items-center max-sm:justify-around'>
         {
-          features.map(({ id, title, text, icon, animation })=>(
+          features.map(({ id, title, text, icon, animation, textSpanish })=>(
             <div 
               key={id} 
               className='bg-[#323232] hover:bg-[#4d4d4d] duration-500 h-[100px] object-contain w-[80%] rounded-[10px] m-5 max-sm:m-[30px] max-sm:mt-[-25px] cursor-pointer z-10 flex flex- justify-start' 
@@ -67,7 +66,7 @@ const DeveloperSection = ({ loading, setLoading }) => {
               </div>
               <div className='w-[80%] object-contain'>
                 <p className='text-[#a5a5a5] text-[15px] max-sm:text-[12px] max-md:text-[12px] font-body object-contain font-semibold p-2 max-sm:p-1'>
-                  {text}
+                  {lenguage === 'english' ? text : textSpanish}
                 </p>
               </div>
             </div>
